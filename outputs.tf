@@ -1,5 +1,5 @@
-#---compute/outputs.tf---
+#--root/outputs.tf
 
-output "krypt0_21_webserver_asg" {
-  value = aws_autoscaling_group.krypt0_21_webserver
+output "lb_dns" {
+  value = module.loadbalancer.loadbalancer_dns
 }
